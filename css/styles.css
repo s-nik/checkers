@@ -1,0 +1,80 @@
+* {
+	box-sizing: border-box;
+	transition: all .4s ease-in-out;
+}
+
+.field {
+	height: 600px;
+	width: 600px;
+	background-image: url('../img/field.jpg');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.container,
+.container-reverse {
+	width: 100%;
+	height: 50%;
+	position: relative;
+}
+
+.check {
+	border-radius: 50%;
+	border: 3px solid transparent;
+	position: absolute;
+	background-color: #555;
+	display: inline-block;
+	height: 56px;
+	width: 56px;
+}
+
+.check:hover,
+.check:focus {
+	border: 3px solid red;
+	transition: all .5s ease-in-out;
+}
+
+.check:active{
+	border: 3px solid green;
+}
+
+.container-reverse {
+	transform: rotate(180deg) translate(2px,3px);
+}
+
+.container-reverse span {
+	background-color: #fff;
+}
+
+.first-row {
+	top: 35px;
+}
+
+.second-row {
+	top: 102px;
+}
+
+.third-row {
+	top: 170px;
+}
+
+.first-column {
+	left: 35px;
+}
+
+.second-column {
+	left: 102px;
+}
+
+.transform-translate-second {
+	transform: translateX(135px);
+}
+
+.transform-translate-third {
+	transform: translateX(270px);
+}
+
+.transform-translate-fourth {
+	transform: translateX(405px);
+}
